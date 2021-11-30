@@ -44,6 +44,7 @@ use log **logging implementation** as example `env_logger` crate:
 
 ## Known Issues
 You can't do more elegant timer creation that would be correct in work.
+
 Like this:
 ```rs
     let _handle = TimerScope {
