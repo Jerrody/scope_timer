@@ -2,7 +2,7 @@
 `scope_timer` crate provides very easy way to create a timer and trace the info.
 
 ## Examples
-```rs
+```rust
     fn fib(n: u64) -> u64 {
         if n <= 1 {
             return 1;
@@ -22,7 +22,7 @@ Label: my_timer | Time: 5.973
 ```
 
 Also, you can do like this:
-```rs
+```rust
     let mut handle = TimerScope::default();
     handle.name = "my_timer";
     handle.log_level = Some(LogLevel::Info);
@@ -34,7 +34,7 @@ Also, you can do like this:
 For this, you specify log level and
 use log **logging implementation** as example `env_logger` crate:
 
-```rs
+```rust
     env_logger::init();
 
     let mut handle = TimerScope::default();
@@ -46,7 +46,7 @@ use log **logging implementation** as example `env_logger` crate:
 You can't do more elegant timer creation that would be correct in work.
 
 Like this:
-```rs
+```rust
     let _handle = TimerScope {
         name: "my_timer",
         ..Default::default()
