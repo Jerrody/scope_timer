@@ -52,4 +52,4 @@ Like this:
         ..Default::default()
     };
 ```
-But PR are welcome. I will try to fix ths issue to make this timer omega-easy-to-use.
+But PR are welcome. I will try to fix this issue to make timer omega-easy-to-use.
