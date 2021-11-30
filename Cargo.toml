@@ -5,10 +5,7 @@ developers = "Gheroghe Ugrik"
 description = "A freaking easy-to-use timer for measuring scope time for execution."
 keywords = ["timer", "scope", "performance", "time", "logging", "debugging", "debug"]
 license = "MIT OR Apache-2.0"
-
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 log = "0.4.14"
