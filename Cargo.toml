@@ -3,7 +3,7 @@ name = "scope_timer"
 version = "0.1.0"
 developers = "Gheroghe Ugrik"
 description = "A freaking easy-to-use timer for measuring scope time for execution."
-keywords = ["timer", "scope", "performance", "time", "logging", "debugging", "debug"]
+keywords = ["timer", "scope", "performance", "logging", "debugging"]
 license = "MIT OR Apache-2.0"
 edition = "2021"
 
