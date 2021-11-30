@@ -6,6 +6,7 @@ description = "A freaking easy-to-use timer for measuring scope time for executi
 keywords = ["timer", "scope", "performance", "logging", "debugging"]
 license = "MIT OR Apache-2.0"
 edition = "2021"
+repository  = "https://github.com/Jerrody/scope_timer"
 
 [dependencies]
 log = "0.4.14"
