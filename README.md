@@ -18,7 +18,7 @@
 ```
 ```
 Output:
-Label: my_timer | Time: 5.973
+Label: my_timer | Time: 5.973secs
 ```
 
 Also, you can do like this:
