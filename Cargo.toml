@@ -1,6 +1,6 @@
 [package]
 name = "scope_timer"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Gheroghe Ugrik"]
 description = "A freaking easy-to-use timer for measuring scope time for execution."
 keywords = ["timer", "scope", "performance", "profiling", "debugging"]
