@@ -27,6 +27,18 @@ Also, you can do like this:
     handle.name = "my_timer";
     handle.log_level = Some(LogLevel::Info);
 ```
+or like this:
+```rust
+    let mut handle = scope_timer::ScopeTimer {
+        label: "timer",
+        time_format: TimeFormat::SecondsF32(3),
+        now: std::time::Instant::now(),
+        log_level: None,
+        debug_only: true,
+    };
+
+    handle.label = "what"
+```
 
 ## Log Level
 `scope_timer` crate has minimal dependencies. You can use log crate for your projects.
@@ -43,7 +55,8 @@ use log **logging implementation** as example `env_logger` crate:
 ```
 
 ## Known Issues
-You can't do more elegant timer creation that would be correct in work.
+You can't do more elegant timer creation that would be correct in work because occurs move which automatically
+occurs drop and you get double print of your timer (in time move and  after move).
 
 Like this:
 ```rust
