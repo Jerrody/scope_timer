@@ -12,7 +12,7 @@
     }
     
     fn main() {
-        let _handle = TimerScope::new("my_timer", TimeFormat::SecondsF32(3), None, false);
+        let _handle = ScopeTimer::new("my_timer", TimeFormat::SecondsF32(3), None, false);
         println!("{}", fib(46));
     }
 ```
@@ -23,7 +23,7 @@ Label: my_timer | Time: 5.973secs
 
 Also, you can do like this:
 ```rust
-    let mut handle = TimerScope::default();
+    let mut handle = ScopeTimer::default();
     handle.name = "my_timer";
     handle.log_level = Some(LogLevel::Info);
 ```
@@ -49,7 +49,7 @@ use log **logging implementation** as example `env_logger` crate:
 ```rust
     env_logger::init();
 
-    let mut handle = TimerScope::default();
+    let mut handle = ScopeTimer::default();
     handle.name = "my_timer";
     handle.log_level = Some(LogLevel::Info);
 ```
@@ -60,7 +60,7 @@ occurs drop and you get double print of your timer (in time move and  after move
 
 Like this:
 ```rust
-    let _handle = TimerScope {
+    let _handle = ScopeTimer {
         name: "my_timer",
         ..Default::default()
     };
